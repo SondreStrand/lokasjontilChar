@@ -1,0 +1,12 @@
+import static javax.swing.JOptionPane.*;  // importer JOptionPane
+
+ class Pseudokode {
+  public static void main(String[] args) {
+    String Minstreng = showInputDialog( "tast inn en setning og se hvilken posisjon den første bokstaven c har!"); //ber bruker taste inn en setning
+    
+    showMessageDialog(null, " Hvis bokstaven C ikke finnes, vil neste vindu vise -1 " ); //informerer bruker om hva de kan forvente
+
+    int pos = Minstreng.indexOf('c'); //finner posisjonen til den første av bokstaven C
+    showMessageDialog(null, Minstreng + ": " + pos ); // viser hvilken posisjon bokstaven C har fra 0  og oppover 
+  }
+}
